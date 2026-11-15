@@ -81,7 +81,11 @@ export default function RYFPage() {
         <div className="container">
           <SectionHead label="Episodes" id="ryf-episodes-title" title="Coming soon." />
           <p className="ryf-placeholder reveal">
-            Episodes will live here once the channel is up.
+            The channel is live. Subscribe on{" "}
+            <a href={ryf.url} target="_blank" rel="noopener">
+              YouTube
+            </a>{" "}
+            to catch the first episode.
           </p>
           <p className="ryf-more">
             Want the films and the mythology behind it?{" "}
