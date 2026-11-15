@@ -502,7 +502,8 @@ export const worlds: World[] = [
       "Me, talking honestly about recovery, change and learning to love the person who is still becoming.",
     href: "/ryf",
     cta: "About the podcast",
-    urlLabel: "YouTube channel",
+    url: "https://www.youtube.com/@DBuildsRYF",
+    urlLabel: "Watch on YouTube",
   },
   {
     key: "acu",
