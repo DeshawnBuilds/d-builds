@@ -155,6 +155,14 @@ export const projects: Project[] = [
     description: "Software in production. Details will be documented as it's built.",
   },
   {
+    title: "ATLAS",
+    category: "Research",
+    status: "Building",
+    description:
+      "A ledger of dated calls about where AI's physical buildout gets squeezed next. Each call is logged with what would prove it wrong, then scored when its date comes.",
+    href: "/things/atlas",
+  },
+  {
     title: "AI Cinema Lab",
     category: "Experiments",
     status: "Active",
