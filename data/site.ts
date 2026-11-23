@@ -149,10 +149,12 @@ export const projects: Project[] = [
     href: "/things/awakened-creators",
   },
   {
-    title: "Mirror",
-    category: "Software",
-    status: "In production",
-    description: "Software in production. Details will be documented as it's built.",
+    title: "The Mirror",
+    category: "Journal app",
+    status: "Active",
+    description:
+      "A journal that studies your patterns and reflects them back to you. Reflection, not instruction.",
+    href: "https://the-mirror-app.netlify.app",
   },
   {
     title: "AI Cinema Lab",
