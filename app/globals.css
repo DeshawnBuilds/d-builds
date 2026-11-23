@@ -2879,3 +2879,195 @@ main:focus {
     border-left: 1px solid var(--line);
   }
 }
+
+/* =========================================================
+   ATLAS — the ledger page (/things/atlas)
+   ========================================================= */
+
+.atlas-crumbs {
+  margin-top: 28px;
+}
+
+.atlas-crumbs a:hover {
+  color: var(--acid);
+}
+
+.atlas-rules {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.atlas-rules li {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+
+.atlas-rules p {
+  margin: 0;
+  max-width: 34em;
+  color: var(--ink-2);
+}
+
+.atlas-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+  margin: 0 0 28px;
+  color: var(--ink-2);
+}
+
+.atlas-calls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.atlas-call {
+  border-top: 1px solid var(--line);
+}
+
+.atlas-call summary {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  padding: 28px 44px 28px 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.atlas-call summary::-webkit-details-marker {
+  display: none;
+}
+
+.atlas-call summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 24px;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  color: var(--stone);
+  transition: color 0.3s, transform 0.4s var(--ease-out);
+}
+
+.atlas-call details[open] summary::after {
+  transform: rotate(45deg);
+  color: var(--acid);
+}
+
+.atlas-call summary:focus-visible {
+  outline: 1px solid var(--acid);
+  outline-offset: 4px;
+}
+
+.atlas-call__num {
+  color: var(--acid);
+}
+
+.atlas-call__title {
+  max-width: 22em;
+  font-size: clamp(1.375rem, 4.2vw, 2.5rem);
+  font-weight: 800;
+  font-stretch: 80%;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  transition: color 0.3s var(--ease);
+}
+
+.atlas-call summary:hover .atlas-call__title {
+  color: var(--acid);
+}
+
+.atlas-call__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  color: var(--ink-2);
+}
+
+.atlas-tag--open .dot {
+  background: transparent;
+  border: 1px solid var(--acid);
+}
+
+.atlas-tag--wrong .dot {
+  background: var(--stone);
+}
+
+.atlas-call__body {
+  display: grid;
+  gap: 24px;
+  max-width: 44em;
+  padding: 0 0 36px;
+  color: var(--ink-2);
+}
+
+.atlas-call__body h3 {
+  margin: 0 0 8px;
+}
+
+.atlas-call__body p {
+  margin: 0;
+}
+
+.atlas-call__body ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.atlas-call__pair {
+  display: grid;
+  gap: 24px;
+}
+
+.atlas-record {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.atlas-disclaimer {
+  max-width: 34em;
+  margin-top: 16px;
+  color: var(--stone);
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 720px) {
+  .atlas-call__pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 960px) {
+  .atlas-rules {
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--line);
+  }
+
+  .atlas-rules li {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 28px 32px 28px 0;
+    border-top: 0;
+  }
+
+  .atlas-call summary {
+    padding-block: 40px;
+  }
+
+  .atlas-call summary::after {
+    top: 36px;
+  }
+}
