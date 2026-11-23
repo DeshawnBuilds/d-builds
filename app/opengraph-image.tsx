@@ -21,7 +21,7 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ display: "flex", fontSize: 24, letterSpacing: 6, color: "#8f8a80" }}>
-          BUILD LOG / 001 · LAS VEGAS, NV
+          BUILD LOG / 001
         </div>
         <div style={{ display: "flex", flexDirection: "column", fontSize: 92, fontWeight: 800, lineHeight: 0.95, letterSpacing: -3 }}>
           <span>I&apos;M BUILDING A LIFE</span>

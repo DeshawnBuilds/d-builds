@@ -8,7 +8,6 @@ export const site = {
   name: "D BUILDS",
   title: "D BUILDS — Deshawn Builds",
   description: "Building myself. Building things. Building my future.",
-  location: "Las Vegas, NV",
   roles: ["Creator", "Builder", "Student of life"],
   headline: ["I'M BUILDING A LIFE", "I ONCE THOUGHT", "I WAS LATE FOR."],
   supporting:

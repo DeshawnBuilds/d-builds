@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        label={`About / ${site.location}`}
+        label="About"
         title={<>I&rsquo;m<br />Deshawn<span className="accent">.</span></>}
       >
         <figure className="about-portrait">

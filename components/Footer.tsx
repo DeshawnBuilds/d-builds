@@ -76,7 +76,6 @@ export default function Footer() {
 
         <div className="footer__bottom meta">
           <p>© 2026 Deshawn Builds</p>
-          <p>{site.location}</p>
         </div>
       </div>
     </footer>

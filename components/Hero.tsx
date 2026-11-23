@@ -38,10 +38,6 @@ export default function Hero() {
         <p className="hero__support">{site.supporting}</p>
         <dl className="hero__meta-bottom meta">
           <div>
-            <dt>Location</dt>
-            <dd>{site.location}</dd>
-          </div>
-          <div>
             <dt>Est.</dt>
             <dd>Now</dd>
           </div>
